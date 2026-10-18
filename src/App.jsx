@@ -21,7 +21,8 @@ function App() {
 
       <SEO
         title="Tyre Retreading & Commercial Tyre Services"
-        description="Akhtar Tyre Retreading Works provides tyre retreading, tyre repair, puncture repair and old tyre purchasing services for trucks, tractors and industrial and heavy-duty vehicles in Hinganghat, Wardha, Maharashtra."
+        description="Akhtar Tyre Retreading Works provides tyre retreading, tyre rebuilding and related services in Hinganghat, Wardha, Maharashtra."
+        structuredData={false}
       />
 
       <Navbar />
@@ -29,36 +30,12 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-
-          <Route
-            path="/about"
-            element={<About />}
-          />
-
-          <Route
-            path="/services"
-            element={<Services />}
-          />
-
-          <Route
-            path="/products"
-            element={<Products />}
-          />
-
-          <Route
-            path="/contact"
-            element={<Contact />}
-          />
-
-          <Route
-            path="/privacy-policy"
-            element={<PrivacyPolicy />}
-          />
-
-          <Route
-            path="/terms"
-            element={<Terms />}
-          />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<Terms />} />
         </Routes>
       </main>
 
