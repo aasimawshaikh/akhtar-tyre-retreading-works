@@ -14,10 +14,6 @@ const businessSchema = {
   telephone: "+918830938317",
   email: company.email,
   foundingDate: "1987",
-  founder: {
-    "@type": "Person",
-    name: company.proprietor,
-  },
   address: {
     "@type": "PostalAddress",
     streetAddress: "Opposite Abdullah Heights, near Bharat Petrol Pump and Nandori Chowk, National Highway 7",
