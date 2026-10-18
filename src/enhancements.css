@@ -1,0 +1,63 @@
+/* Added responsive patterns for service detail pages and WhatsApp-first enquiries. */
+.nav-whatsapp-button { min-height: 40px; padding-inline: 13px; background: #167b54; color: #fff; }
+.nav-whatsapp-button:hover { background: #116543; }
+.breadcrumbs { display:flex; flex-wrap:wrap; align-items:center; gap:9px; margin-bottom:22px; color:#748092; font-size:12px; }
+.breadcrumbs a { color:#d73b27; font-weight:700; }
+.service-detail-layout { display:grid; grid-template-columns:minmax(0,1fr) minmax(320px,.88fr); align-items:start; gap:44px; }
+.service-copy h2 { margin:25px 0 10px; font-size:clamp(22px,3vw,30px); letter-spacing:-.025em; }
+.service-copy p { color:#5f6b7d; }
+.service-feature-icon { display:grid; place-items:center; width:60px; height:60px; border-radius:14px; background:#fbe9e5; color:#d73b27; }
+.service-check-list { display:grid; gap:12px; padding:0; margin:24px 0; list-style:none; }
+.service-check-list li { display:flex; gap:10px; align-items:flex-start; color:#394557; }
+.service-check-list svg { color:#18835b; flex-shrink:0; margin-top:3px; }
+.service-enquiry-card { min-width:0; padding:25px; border:1px solid #e3e7ec; border-radius:18px; background:#fff; box-shadow:0 15px 45px rgba(20,29,43,.06); }
+.enquiry-container { max-width:900px; }
+.enquiry-form { padding:clamp(22px,4vw,38px); border:1px solid #e3e7ec; border-radius:18px; background:#fff; box-shadow:0 14px 45px rgba(20,29,43,.045); }
+.enquiry-form-heading { margin-bottom:25px; }
+.enquiry-form-heading h2 { margin:9px 0; font-size:clamp(25px,3vw,34px); line-height:1.15; letter-spacing:-.035em; }
+.enquiry-form-heading p { margin:0; color:#687386; }
+.enquiry-form-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:17px; }
+.enquiry-form label { display:grid; gap:7px; color:#344052; font-size:13px; font-weight:700; }
+.enquiry-form label > span { display:inline; color:#d73b27; }
+.enquiry-form input,.enquiry-form select,.enquiry-form textarea { width:100%; min-width:0; padding:12px 13px; border:1px solid #d8dee6; border-radius:8px; background:#fff; color:#18212f; font-size:14px; font-weight:450; }
+.enquiry-form input:focus,.enquiry-form select:focus,.enquiry-form textarea:focus { outline:3px solid rgba(215,59,39,.15); border-color:#d73b27; }
+.enquiry-form textarea { resize:vertical; }
+.enquiry-form-full { grid-column:1/-1; }
+.enquiry-submit { margin-top:23px; border:0; }
+.enquiry-privacy { display:flex; align-items:flex-start; gap:8px; margin:15px 0 0; color:#6a7586; font-size:12px; }
+.enquiry-privacy svg { flex-shrink:0; color:#18835b; }
+.form-error { color:#b42318; font-size:13px; font-weight:650; }
+.small-note { font-size:12px; }
+.feature-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+.feature-card { padding:27px; border:1px solid #e3e7ec; border-radius:15px; background:#fff; }
+.feature-card > svg { color:#d73b27; }
+.feature-card h2 { margin:18px 0 8px; font-size:20px; }
+.feature-card p { margin:0; color:#687386; font-size:14px; }
+.gallery-placeholder { max-width:780px; margin:0 auto; padding:clamp(28px,6vw,60px); text-align:center; border:1px dashed #cbd3dd; border-radius:20px; background:#f8fafb; }
+.gallery-placeholder-icon { display:grid; place-items:center; width:72px; height:72px; margin:0 auto 22px; border-radius:18px; background:#fbe9e5; color:#d73b27; }
+.gallery-placeholder h2 { margin:12px 0; font-size:clamp(25px,4vw,34px); letter-spacing:-.03em; }
+.gallery-placeholder p { max-width:590px; margin:0 auto 24px; color:#687386; }
+.guide-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+.guide-card { padding:26px; border:1px solid #e3e7ec; border-radius:15px; background:#fff; }
+.guide-card > svg { margin-top:20px; color:#d73b27; }
+.guide-card h2 { margin:14px 0 9px; font-size:22px; line-height:1.2; letter-spacing:-.025em; }
+.guide-card p { color:#687386; font-size:14px; }
+.guide-card-meta { display:flex; justify-content:space-between; gap:10px; color:#697386; font-size:11px; font-weight:700; }
+.guide-card-meta span:last-child { display:flex; align-items:center; gap:5px; white-space:nowrap; }
+.guide-article h1 { margin:18px 0; font-size:clamp(35px,5vw,52px); line-height:1.08; letter-spacing:-.045em; }
+.guide-article h2 { margin-top:35px; font-size:25px; }
+.guide-article-intro { font-size:19px; line-height:1.75; }
+.guide-article-cta { margin-top:45px; padding:28px; border-radius:14px; background:#f6f8fa; }
+.guide-article-cta h2 { margin-top:0; }
+.guide-disclaimer { margin-top:30px; font-size:12px; }
+@media (max-width:980px) {
+ .service-detail-layout { grid-template-columns:1fr; }
+ .feature-grid,.guide-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (max-width:760px) {
+ .feature-grid,.guide-grid { grid-template-columns:1fr; }
+ .enquiry-form-grid { grid-template-columns:1fr; }
+ .enquiry-form-full { grid-column:auto; }
+ .service-enquiry-card { padding:16px; }
+ .nav-whatsapp-button { width:100%; }
+}
