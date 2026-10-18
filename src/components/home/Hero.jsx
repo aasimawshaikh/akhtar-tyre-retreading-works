@@ -1,5 +1,6 @@
 import { ArrowRight, Phone, MapPin, MessageCircle } from "lucide-react";
 import { company } from "../../data/company";
+import heroImage from "../../assets/hero.png";
 import Button from "../common/Button";
 import { trackEnquiry } from "../../utils/trackEnquiry";
 
@@ -17,7 +18,7 @@ function Hero() {
         </div>
         <div className="hero-location"><MapPin size={18} /><span>Hinganghat, Wardha, Maharashtra</span></div>
       </div>
-      <div className="hero-visual"><div className="hero-tyre-card"><div className="hero-tyre-ring"><div className="hero-tyre-inner"><span>AT</span></div></div><div className="hero-card-label"><strong>TYRE RETREADING</strong><span>Trucks • Tractors • Industrial</span></div></div></div>
+      <div className="hero-visual"><div className="hero-photo-card"><img className="hero-photo" src={heroImage} alt="Tyre retreading and commercial tyre services" /><div className="hero-card-label"><strong>TYRE RETREADING</strong><span>Trucks • Tractors • Industrial</span></div></div></div>
     </div>
   </section>;
 }
