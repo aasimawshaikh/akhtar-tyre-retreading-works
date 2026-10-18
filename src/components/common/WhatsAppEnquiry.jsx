@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { MessageCircle, Send, ShieldCheck } from "lucide-react";
-import { company } from "../../data/company";
 import { services } from "../../data/services";
 import { trackEnquiry } from "../../utils/trackEnquiry";
 
