@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { Building2, MapPin, FileText, Phone, Mail, Clock, CalendarDays } from "lucide-react";
+import { Building2, MapPin, FileText, Phone, Clock, CalendarDays } from "lucide-react";
 import { company } from "../data/company";
 import SectionHeading from "../components/common/SectionHeading";
 
