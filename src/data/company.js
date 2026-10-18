@@ -6,7 +6,7 @@ export const company = {
     "Tyre Retreading & Commercial Tyre Services in Hinganghat, Wardha",
 
   description:
-    "Akhtar Tyre Retreading Works provides tyre retreading, tyre repair, puncture repair and used tyre purchasing services for trucks, tractors and industrial and heavy-duty vehicles in Hinganghat, Wardha, Maharashtra.",
+    "Akhtar Tyre Retreading Works provides tyre retreading, tyre rebuilding and related services in Hinganghat, Wardha, Maharashtra.",
 
   phone: "8830938317",
   phoneDisplay: "+91 88309 38317",
@@ -19,6 +19,7 @@ export const company = {
   registrationNumber: "473770",
 
   proprietor: "Sayyeda Khatton Akhtar",
+  established: "1987",
 
   address: {
     street:
@@ -47,7 +48,8 @@ export const company = {
   ],
 
   social: {
-    facebook: "",
+    facebook: "https://www.facebook.com/AkhtarTyre/",
+    website: "https://www.akhtartyre.shop/",
     instagram: "",
     youtube: "",
   },
