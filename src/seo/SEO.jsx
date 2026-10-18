@@ -24,10 +24,6 @@ function SEO({
     telephone: "+918830938317",
     email: company.email,
     foundingDate: "1987",
-    founder: {
-      "@type": "Person",
-      name: company.proprietor,
-    },
     address: {
       "@type": "PostalAddress",
       streetAddress: `${address.street}, ${address.road}`,
