@@ -18,7 +18,7 @@ function Hero() {
         </div>
         <div className="hero-location"><MapPin size={18} /><span>Hinganghat, Wardha, Maharashtra</span></div>
       </div>
-      <div className="hero-visual"><div className="hero-photo-card"><img className="hero-photo" src={heroImage} alt="Tyre retreading and commercial tyre services" /><div className="hero-card-label"><strong>TYRE RETREADING</strong><span>Trucks • Tractors • Industrial</span></div></div></div>
+      <div className="hero-visual"><img src={heroImage} alt="Tyre retreading and commercial tyre services" style={{ width: "min(460px, 100%)", aspectRatio: "4 / 5", objectFit: "cover", borderRadius: "22px", boxShadow: "0 30px 80px rgba(20, 29, 43, 0.22)" }} /></div>
     </div>
   </section>;
 }
