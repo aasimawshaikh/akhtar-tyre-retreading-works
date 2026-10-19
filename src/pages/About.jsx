@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { Building2, MapPin, FileText, Phone, Mail, Clock, CalendarDays } from "lucide-react";
+import { Building2, MapPin, FileText, Phone, Clock, CalendarDays } from "lucide-react";
 import { company } from "../data/company";
 import SectionHeading from "../components/common/SectionHeading";
 
@@ -14,10 +14,6 @@ const businessSchema = {
   telephone: "+918830938317",
   email: company.email,
   foundingDate: "1987",
-  founder: {
-    "@type": "Person",
-    name: company.proprietor,
-  },
   address: {
     "@type": "PostalAddress",
     streetAddress: "Opposite Abdullah Heights, near Bharat Petrol Pump and Nandori Chowk, National Highway 7",
